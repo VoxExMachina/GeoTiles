@@ -8,7 +8,6 @@ void setup (){
 }
 
 void draw () {
-  //doot dedoo lallalalalalalallaa
   
   for(int x = 0; x < 25; x++) {
     displayTile[x] = x;
@@ -22,7 +21,8 @@ void draw () {
 
 class TileArray {
  int arraySize;
- TileArray (arraySize) {
+ TileArray (int arraySize) {
+   this.arraySize = arraySize;
   int[] tileSpreadX = new int[arraySize];
   int[] tileSpreadY = new int[arraySize];
  }
