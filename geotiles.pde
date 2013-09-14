@@ -1,6 +1,4 @@
-TileArray displayTile = new TileArray(25);
-TileArray processTile = new TileArray(25);
-
+GeoTile tile = new GeoTile;
 
 void setup (){
   size(550, 550);
@@ -9,22 +7,16 @@ void setup (){
 
 void draw () {
   
-  for(int x = 0; x < 25; x++) {
-    displayTile[x] = x;
-    print(displayTile.length);
-    print(displayTile[x] + displayTile[x]);
+
   }
     
 
 
 }
 
-class TileArray {
- int arraySize;
- TileArray (int arraySize) {
-   this.arraySize = arraySize;
-  int[] tileSpreadX = new int[arraySize];
-  int[] tileSpreadY = new int[arraySize];
- }
-
-} 
+class GeoTile {
+  int terrain;
+  int rainFall;
+  ;
+  
+  
